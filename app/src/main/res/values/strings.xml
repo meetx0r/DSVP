@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DSVP</string>
+    <string name="damn_small_video_player">Damn Small Video Player</string>
+    <string name="button_select">Select and Play</string>
+    <string name="footer">Made With ❤ by Meet</string>
+</resources>
