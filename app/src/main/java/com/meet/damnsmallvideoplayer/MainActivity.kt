@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        filterData()
         val getAction = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
             if(uri != null){
                 videoActivityLauncher(uri)
@@ -31,6 +32,14 @@ class MainActivity : AppCompatActivity() {
         Intent(this, VideoActivity::class.java).also {
             it.putExtra("URI", path.toString())
             startActivity(it)
+        }
+    }
+
+     private fun filterData(){
+        intent?.let {
+            if(it.action == Intent.ACTION_VIEW){
+                videoActivityLauncher(intent.data)
+            }
         }
     }
 }
