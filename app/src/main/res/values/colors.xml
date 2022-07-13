@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!-- Colors for my UI  -->
-    <color name="video_layout_color">#090909</color>
+    <color name="video_layout_color">#000000</color>
     <color name="layout_color">#3F466E</color>
     <color name="text_color">#ECE0E0</color>
     <color name="button_color">#F11F25</color>

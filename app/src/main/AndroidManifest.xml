@@ -15,7 +15,14 @@
         <activity
             android:name=".VideoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/FullScreen">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="content" android:mimeType="video/*"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -23,11 +30,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <data android:scheme="content" android:mimeType="video/*"/>
-                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>

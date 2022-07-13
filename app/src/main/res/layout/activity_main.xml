@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/layout_color"
+    android:padding="15dp"
     tools:context=".MainActivity">
 
 
@@ -25,8 +26,8 @@
 
     <Button
         android:id="@+id/btn_select"
-        android:layout_width="232dp"
-        android:layout_height="74dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
         android:backgroundTint="@color/button_color"
         android:elevation="4dp"
         android:text="@string/button_select"
