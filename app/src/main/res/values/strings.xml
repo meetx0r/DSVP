@@ -2,5 +2,11 @@
     <string name="app_name">DSVP</string>
     <string name="damn_small_video_player">Damn Small Video Player</string>
     <string name="button_select">Select and Play</string>
-    <string name="footer">Made With ❤ by Meet</string>
+    <string name="footer">Made With ❤ by Meetx0r</string>
+    <string name="about_title">Damn Small Video Player</string>
+    <string name="about_text">DSVP is a small permission less video player app for android.</string>
+    <string name="view_source"><u>View Source</u></string>
+    <string name="gpl_logo_description_text">GPL LOGO</string>
+    <string name="gpl_text">It is a completely free and open source software available under GPL V3 License.</string>
+    <string name="info_page_icon_description">Info Page Icon</string>
 </resources>

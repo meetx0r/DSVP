@@ -25,6 +25,13 @@ class MainActivity : AppCompatActivity() {
         binding.btnSelect.setOnClickListener {
             getAction.launch("video/*")
         }
+
+        binding.ivInfo.setOnClickListener {
+            Intent(this, AboutActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
     }
 
     private fun videoActivityLauncher(path: Uri?) {
